@@ -243,7 +243,7 @@ for(var i = 0; i < 3; i++) {
 		}else if mouse_check_button_pressed(mb_left) {
 			button_shake[i]=5 
 		}
-		if mouse_check_button_pressed(mb_right) and cur.toggle=true {
+		if mouse_check_button_pressed(mb_right) and cur.toggle=true and cur.owned>0 {
 			on_scale[i]=0.7
 			
 			cur.action(cur.turned_on)
